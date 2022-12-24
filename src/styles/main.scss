@@ -1,19 +1,64 @@
-$bg: #ff0;
+$text: #27300f;
+$orange: #d26a22;
+$white: #fff;
 
-.box {
-    /*background-color: $bg;
-    &__title {
-        color: red;
-    } */
-    &__image {
-        max-width: 50px;
-    } 
-    &__svg {
-        fill: rgb(143, 52, 52);
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+       display: flex; 
+       list-style-type: none;
+       margin: 0;
+       padding-left: 0;
+       gap: 48px;
+    }
+    &__link {
+        font-size: 16px;
+        color: $text;
+        text-decoration: none;
         &:hover {
-            fill: gold;
+            color: $orange;
         }
     }
+    &__tel {
+        font-size: 16px;
+        color: $text;
+        text-decoration: none;
+        &:hover {
+            color: $orange;
+        }
+    }
+    &__cart {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-color: $orange;
+        border-radius: 100%;
+        background-image: url(../images/cart.svg);
+        background-size: 17px 15px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+    }
+    &__counter {
+        font-size: 8px;
+        color: $white;
+        position: absolute;
+        right: 90px;
+        top: 12px;
+    }
 }
-
+.logo {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 120px;
+    height: 32px;
+}
 
